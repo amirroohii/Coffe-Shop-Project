@@ -1,0 +1,24 @@
+{% load static %}
+{% load render_partial %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Roohi's coffe | {% block page_title %}{% endblock %}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+    {% include 'shared/site_header_refrences.html' %}
+</head>
+<body>
+{% render_partial 'home_module.views.site_header_components' %}
+{% block page_header_start %}{% endblock %}
+{% block content %}{% endblock %}
+{% render_partial 'home_module.views.site_footer_components' %}
+{% include 'shared/site_footer_refrences.html' %}
+{#    <!-- Back to Top -->#}
+{#    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>#}
+</body>
+
+</html>
