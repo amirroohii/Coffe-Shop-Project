@@ -7,11 +7,6 @@ from site_module.models import SiteSetting, SiteFooterLink
 from django.views.generic import TemplateView
 
 
-# def index_page(request:HttpRequest):
-#     model = SiteSetting.objects.filter(is_main_setting=True).first()
-#     context = {'setting': model}
-#     return render(request, 'home_module/index_page.html', context)
-
 class IndexPageView(TemplateView):
     template_name = 'home_module/index_page.html'
 

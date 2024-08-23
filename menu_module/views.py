@@ -12,9 +12,3 @@ class ProductMenuView(TemplateView):
         context['product_menu'] = products_menu
         return context
 
-# def product_list(request):
-#     products_menu = Menu.objects.filter(is_active=True, title__contains='drink').all()
-#
-#     context = {'product_menu': products_menu
-#                }
-#     return render(request, 'menu_module/menu_components.html', context)
